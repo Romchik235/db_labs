@@ -28,7 +28,7 @@ uvicorn src.api.main:app --reload
 
 ### GET: Повертає інформацію про подію WorkflowEvent за вказаним id
 
-![alt text](2.png)
+![alt text](22.png)
 
 ### POST: Додає (створює) нову подію WorkflowEvent. У формі потрібно вказати поля: name, status, user_id, quiz_id
 
@@ -36,7 +36,7 @@ uvicorn src.api.main:app --reload
 
 ### PUT: Оновлює дані обраної події WorkflowEvent за id в базі даних. Можна змінити всі основні поля (name, status, user_id, quiz_id)
 
-![alt text](4.png)
+![alt text](44.png)
 
 ### DELETE: Видаляє подію WorkflowEvent із бази даних за вказаним id
 
