@@ -10,53 +10,38 @@ outline: deep
 ### 1. Встановити залежнсті проекту
 
 ```bash
-yarn
+pip show fastapi
+pip install -U fastapi
 ```
 
 ### 2. Запустити сервер
 
 ```bash
-yarn run start:dev
+uvicorn src.api.main:app --reload
 ```
 
 ## Перевірка працездатности сервісів
 
-### GET: отримати всі запитання
+### GET: Виводить список усіх подій (записів) WorkflowEvent з бази даних
 
 ![alt text](1.png)
 
-### GET: отримати конкретне запитання
+### GET: Повертає інформацію про подію WorkflowEvent за вказаним id
 
 ![alt text](2.png)
 
-### POST: створити запитання
+### POST: Додає (створює) нову подію WorkflowEvent. У формі потрібно вказати поля: name, status, user_id, quiz_id
 
 ![alt text](3.png)
 
-### PUT: оновити запитання
+### PUT: Оновлює дані обраної події WorkflowEvent за id в базі даних. Можна змінити всі основні поля (name, status, user_id, quiz_id)
 
 ![alt text](4.png)
 
-### DELETE: вилучити запитання
+### DELETE: Видаляє подію WorkflowEvent із бази даних за вказаним id
 
 ![alt text](5.png)
 
-### GET: отримати всі типи запитаннь
+### All_Points: Демонструє всі доступні методи API для WorkflowEvent та їхню документацію у Swagger UI
 
-![alt text](6.png)
-
-### GET: отримати конкретний тип запитання
-
-![alt text](7.png)
-
-### POST: створити тип запитання
-
-![alt text](8.png)
-
-### PUT: оновити тип запитання
-
-![alt text](9.png)
-
-### DELETE: вилучити тип запитання
-
-![alt text](10.png)
+![alt text](all.png)
