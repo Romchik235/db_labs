@@ -10,8 +10,9 @@ outline: deep
 ### 1. Встановити залежнсті проекту
 
 ```bash
-pip show fastapi
-pip install -U fastapi
+pip  install -U fastapi 
+install uvicorn
+pip show fastapi 
 ```
 
 ### 2. Запустити сервер
